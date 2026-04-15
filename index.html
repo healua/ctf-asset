@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주식회사 씨티에프에셋 - 홈페이지 공사 중</title>
+    <link rel="icon" href="회사 파비콘.svg" type="image/svg+xml">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f2f4f7; 
+            color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            /* 대화면 PC를 위해 최대 너비를 1200px까지 확장 */
+            max-width: 1200px; 
+            width: 95%;
+            padding: 100px 60px; /* 내부 여백 대폭 확대 */
+            background: #ffffff;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+        }
+
+        /* 로고: 대화면에서 시원하게 보이도록 크기 조절 */
+        .logo {
+            max-width: 650px; 
+            width: 100%;
+            height: auto;
+            margin-bottom: 80px;
+        }
+
+        h1 {
+            font-size: 3.2rem; /* 제목 크기 대폭 확대 */
+            font-weight: 800;
+            margin-bottom: 30px;
+            letter-spacing: -0.04em;
+            color: #111;
+        }
+
+        p.notice {
+            font-size: 1.6rem; /* 안내 문구 크기 확대 */
+            color: #444;
+            margin-bottom: 80px;
+            line-height: 1.7;
+            word-break: keep-all;
+        }
+
+        /* 연락처 섹션: 가로로 길게 배치 */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 80px; 
+            border-top: 2px solid #f0f0f0;
+            padding-top: 70px;
+        }
+
+        .contact-item {
+            font-size: 1.8rem; /* 연락처 텍스트 크기 확대 */
+            display: flex;
+            flex-direction: column; /* 라벨과 정보를 세로로 배치하여 가독성 증대 */
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item .label {
+            font-weight: 800;
+            color: #b5954a;
+            font-size: 1rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .contact-item a {
+            color: #111;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .contact-item a:hover {
+            color: #b5954a;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            margin-top: 100px;
+            font-size: 1.1rem;
+            color: #bbb;
+        }
+
+        /* --- 태블릿 및 모바일 대응 --- */
+        @media (max-width: 1024px) {
+            .container { padding: 60px 30px; }
+            h1 { font-size: 2.2rem; }
+            p.notice { font-size: 1.2rem; }
+            .logo { max-width: 450px; }
+            .contact-info { gap: 40px; }
+            .contact-item { font-size: 1.3rem; }
+        }
+
+        @media (max-width: 600px) {
+            .container { 
+                width: 100%;
+                box-shadow: none;
+                background: transparent;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 30px;
+            }
+            h1 { font-size: 1.8rem; }
+            .logo { max-width: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="회사 로고.svg" alt="CTF Asset 로고" class="logo">
+
+        <h1>홈페이지 준비 중입니다</h1>
+        <p class="notice">
+            주식회사 씨티에프에셋이 더 가치 있는 금융 파트너로 찾아뵙겠습니다.<br>
+            서비스 구축 중이오니, 급한 용무는 아래 연락처를 이용해 주세요.
+        </p>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="label">Contact</span>
+                <a href="tel:0269562284">02) 6956-2284</a>
+            </div>
+            <div class="contact-item">
+                <span class="label">Email Address</span>
+                <a href="mailto:coo@ctf-asset.com">coo@ctf-asset.com</a>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 Cent To Fortune Asset Co., Ltd. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
